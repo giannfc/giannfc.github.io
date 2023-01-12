@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="calculadora.png">
+    <script src="./index.js" defer>  </script>
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input{
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="calculadora.png" alt="calculadora" height="70px" width="70px">
+    <h1 style="color: limegreen;">Calculadora</h1>
+    <h3 style="color:rgb(224, 48, 4)">by giannfc</h3>
+    <form action="" method="dialog">
+    <input type="text" id="op1" placeholder="Operador 1">
+    <input type="text" id="operacion" placeholder="Signo (+, -, *, /)">
+    <input type="text" id="op2" placeholder="Operador 2">
+    <input type="submit" id="calcular" value="Calcular">
+    </form>
+    <p id="resultado"> </p>
+</body>
+</html>
