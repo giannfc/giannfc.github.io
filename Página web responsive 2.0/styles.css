@@ -12,6 +12,7 @@ body{
     margin: 0;  
 }
 
+
 h1{font-size: 3.5em;}
 h2{font-size: 2.7em;}
 h3{font-size: 2em;}
@@ -30,7 +31,7 @@ button{
 }
 
 button:hover{
-    background-color: rgb(109, 6, 6);;
+    background-color: rgb(109, 6, 6);
 }
 
 .color-acento {color: rgb(145, 12, 12);}
@@ -97,13 +98,20 @@ header a:hover{
     background-size: cover;
     background-position: center center;
 }
+/*Fin Hero*/
+/*Empieza About-me*/
 
 #about-me .container{
     text-align: center;
     padding: 200px 12px;
 
-}
 
+}
+#about-me h2{
+    font-size: 4em;
+}
+/*Fin About-me*/
+/*Empieza Projects*/
 #projects{
     background-color: rgb(30,30,30);
     color: white;  
@@ -114,12 +122,28 @@ header a:hover{
 padding: 150px 12px;
 }
 
-#projects h2{
+#projects h1{
     margin-top: 0;
+    font-size: 4em;
+}
+
+#projects h3{
+    margin-top: 0;
+    font-size: 3em;
 }
 
 #projects p{
     display: none;
+}
+
+#projects .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
 }
 
 
@@ -129,7 +153,7 @@ padding: 150px 12px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/blog.gif");
+    ,url("media/projects1.gif");
 }
 
 .card:nth-child(2){
@@ -138,7 +162,7 @@ padding: 150px 12px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/videoGame.gif");
+    ,url("media/projects2.gif");
 
 }
 
@@ -148,5 +172,117 @@ padding: 150px 12px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("media/calcultator.gif");
+    ,url("media/projects3.webp");
+}
+
+/*Fin Projects*/
+/*Empieza Skills*/
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+
+   #skills .container{
+    padding: 100px 12px;
+
+    } 
+
+    #skills h1{
+        margin-top: 0;
+        font-size: 4em;
+        text-align: center;
+    }
+    
+    #skills h6{
+        margin-top: 0;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+
+  #skills .card1{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    align-items: center;
+    height: 200px;
+
+
+}
+
+
+.card1:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/html5.png");
+}
+
+.card1:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/CSS3.png");
+
+}
+
+.card1:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/js.jpeg");
+}
+/*Fin Skills*/
+.iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: rgb(145, 12, 12);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+
+.iconbutton :hover{
+    background-color: rgb(109, 6, 6);
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+  
+/*Empieza Footer*/
+
+footer{
+    background-color: rgb(30,30,30); 
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: white; 
+    font-weight: bold;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
