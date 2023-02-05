@@ -1,0 +1,454 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;  
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+li{font-size: 1.25em;}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    transition: background-color 0.2s;
+    background-color: rgb(145, 12, 12);
+}
+
+button:hover{
+    background-color: rgb(109, 6, 6);
+}
+
+.color-acento {color: rgb(145, 12, 12);
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(19, 18, 18);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.60em; 
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/*.en{
+    display: flex;
+    flex-direction: row;
+    color:  rgb(30, 30, 30);
+    font-weight: bold;
+    
+}
+
+.es{
+    display: flex;
+    flex-direction: row;
+    color: rgb(145, 12, 12);
+    font-weight: bold;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+    align-items: center;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: rgb(30, 30, 30);
+    border-radius: 25px;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid rgb(30, 30, 30);
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+    left: 25px;
+    border: 2px solid rgb(145, 12, 12);
+}
+
+.check:checked:before{
+    background: rgb(145, 12, 12);
+}*/
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: color 0.2s;
+}
+
+header a:hover{
+    color:rgb(145, 12, 12)
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*Fin Hero*/
+
+/*Empieza About-me*/
+#about-me .container{
+    text-align: center;
+    padding: 200px 12px;
+  font-weight: bold;
+
+}
+#about-me h2{
+    font-size: 4em;
+}
+/*Fin About-me*/
+
+/*Empieza Projects*/
+#projects{
+    background-color: rgb(30,30,30);
+    color: white;  
+    text-align: center;
+}
+
+#projects .container{
+padding: 150px 12px;
+}
+
+#projects h1{
+    margin-top: 0;
+    font-size: 4em;
+}
+
+#projects h3{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#projects p{
+    display: none;
+}
+
+#projects .card{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+}
+
+.card:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/projects1.gif");
+}
+
+.card:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/projects2.gif");
+
+}
+
+.card:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/projects3.webp");
+}
+/*Fin Projects*/
+
+/*Empieza Skills*/
+#skills {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 150px 12px;
+  }
+  
+#skills .card1 {
+    margin: 50px;
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 1px solid gray;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    margin: 50px;
+}
+  
+#skills img {
+    height: 60px;
+    align-items: center;
+  }
+
+#skills h1{
+    text-align: center;
+    margin-top: 1;
+    font-size: 4em;
+}
+  
+#skills h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-block-start: 8px;
+    margin-block-end: 15px;
+    font-weight: bold;
+  } 
+  
+#skills p {
+    align-items: center;
+    font-size: 15px;
+    color: rgb(75, 73, 73);
+    font-weight: bold;
+    margin-block-start: 15px;
+    margin-block-end: 2px;
+  } 
+  
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/*Fin Skills*/
+
+/*Empieza IconHome*/
+.iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: rgb(145, 12, 12);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+
+.iconbutton :hover{
+    background-color: rgb(109, 6, 6);
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+/*Termina Iconhoome*/
+
+/*Empieza Footer*/
+footer{
+  background-color: rgb(19, 18, 18);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h4{
+  color: white;
+  text-align: center;
+}
+
+footer h6{
+  color: white;
+  margin: 3px;
+  text-align: center;
+}
+
+a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+footer p{
+    margin: 0;
+    padding: 0px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+footer .container{
+    padding: 2px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+  margin-bottom: 2px;
+}
+
+.social-icon{
+  color: rgb(145, 12, 12);
+  transition: color 0.2s;
+}
+
+.social-icon:hover{
+  color: rgb(109, 6, 6);
+}
+/*Termina Footer*/
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #about-me .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #about-me .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #about-me h2{
+        margin-top: 0px;
+    }
+
+    #about-me .img-container{
+        background-image: url("media/code.webp");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        border-radius: 8px;
+    }
+
+    #projects .projects{
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects button{
+        bottom: 5px;
+        
+    }
+
+    #projects p{
+        font-size: 16px;
+        text-align: left;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #projects h3{
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #projects .card{
+        padding: 50px;
+        width: 33%;
+    }
+   
+    #skills .skill{
+        display: flex;
+        align-items: center;
+    }  
+}
